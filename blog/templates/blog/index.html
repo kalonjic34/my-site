@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}My Blog{% endblock %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "blog/index.css" %}">
+{% endblock %}
+    
+{% block content %}
+    <header>
+        <h1><a href="">Chris' Blog</a></h1>
+
+        <nav>
+            <a href="">All Posts</a>
+        </nav>
+    </header>
+    
+    <section id="welcome">
+        <header>
+            <img src="" alt="Chris - The author of the Blog">
+            <h2>Christian's Blog</h2>
+        </header>
+        <p>Hi, I am Chris and I love to blog about tech and the world!</p>
+    </section>
+
+    <section id="latest-post">
+        <h2>My Latest Thoughts</h2>
+
+        <ul>
+            <li>
+                <article class="post">
+                    <a href="">
+                        <img src="" alt="Mountanin Hiking">
+                        <div class="post__content">
+                            <h3>Mountain Hiking</h3>
+                            <p>There is nothing like the views you get when hiking in the mountains! 
+                                And i wasnt even prepared for what happend whilst I
+                                was enjoying the view!
+                            </p>
+                        </div>
+                    </a>
+                </article>
+            </li>
+        </ul>
+    </section>
+
+    <section id="about">
+        <h2>What i do</h2>
+        <p>I love programming, i love to help others and i enjoy expoloring new technology
+            in general!
+        </p>
+        <p>My goal is to keep on growing as a developer - 
+            and i could help you do the same, id be very happy</p>
+    </section>
+</body>
+{% endblock %}
